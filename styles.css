@@ -3,58 +3,58 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f8f9fa;
-}
-
-header {
-    background-color: #4CAF50;
+  }
+  
+  .header-container {
+    background-color: #4CAF50; /* green bar */
     color: white;
     padding: 1em 0;
     text-align: center;
-    position: relative;
-}
-
-header .logo {
-    position: absolute;
-    left: 20px;
-    top: 10px;
-    height: 50px;
-}
-
-nav ul {
+  }
+  
+  .logo-big {
+    width: 400px; /* adjust this value to set the desired logo size */
+    height: auto;
+    margin: 0 auto; /* center the logo horizontally */
+    display: block;
+  }
+  
+  
+  nav ul {
     list-style: none;
     padding: 0;
     display: flex;
     justify-content: center;
     background-color: #333;
     margin: 0;
-}
-
-nav ul li {
+  }
+  
+  nav ul li {
     margin: 0;
-}
-
-nav ul li a {
+  }
+  
+  nav ul li a {
     display: block;
     padding: 1em;
     color: white;
     text-decoration: none;
-}
-
-nav ul li a:hover {
+  }
+  
+  nav ul li a:hover {
     background-color: #111;
-}
-
-section {
+  }
+  
+  section {
     padding: 2em;
     margin: 1em auto;
     max-width: 800px;
-}
-
-h1, h2 {
+  }
+  
+  h1, h2 {
     color: #333;
-}
-
-footer {
+  }
+  
+  footer {
     background-color: #4CAF50;
     color: white;
     text-align: center;
@@ -62,4 +62,5 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
-}
+  }
+  
