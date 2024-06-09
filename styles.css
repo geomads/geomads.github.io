@@ -1,66 +1,148 @@
+/* General Styles */
 body {
+    text-align: center;
     font-family: Arial, sans-serif;
+    line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f8f9fa;
-  }
-  
-  .header-container {
+}
+
+/* Header Styles */
+.header-container {
     background-color: #4CAF50; /* green bar */
     color: white;
     padding: 1em 0;
     text-align: center;
-  }
-  
-  .logo-big {
-    width: 400px; /* adjust this value to set the desired logo size */
+}
+
+.logo-big {
+    width: 450px; /* adjust this value to set the desired logo size */
     height: auto;
     margin: 0 auto; /* center the logo horizontally */
     display: block;
-  }
-  
-  
-  nav ul {
+}
+
+/* Navigation Styles */
+nav ul {
     list-style: none;
+    margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: center;
-    background-color: #333;
-    margin: 0;
-  }
-  
-  nav ul li {
-    margin: 0;
-  }
-  
-  nav ul li a {
-    display: block;
-    padding: 1em;
-    color: white;
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav a {
+    color: #666;
+    font-weight: bold;
     text-decoration: none;
-  }
-  
-  nav ul li a:hover {
-    background-color: #111;
-  }
-  
-  section {
-    padding: 2em;
-    margin: 1em auto;
-    max-width: 800px;
-  }
-  
-  h1, h2 {
+}
+
+nav a:hover {
+    color: #03A678;
+}
+
+/* About Us Styles */
+#about {
+    background-color: #f0f0f0; /* Light grey background for the about section */
+    padding: 2em 0; /* Add padding to the section */
+    text-align: center;
+}
+
+#about h2 {
+    margin-bottom: 1em;
+    font-size: 2em;
     color: #333;
-  }
-  
-  footer {
+}
+
+#about p {
+    max-width: 800px; /* Set a max-width for better readability */
+    margin: 0 auto 1.5em auto; /* Center the text block */
+    color: #555;
+}
+
+/* Services Styles */
+.services-image {
+    width: 50%; /* adjust this value to set the desired image size */
+    height: auto;
+    margin: 1.5em auto; /* center the image horizontally */
+    display: block;
+}
+
+#services {
+    text-align: center;
+    padding: 2em 0; /* Add padding to the section */
+}
+
+#services h2 {
+    margin-bottom: 1em;
+    font-size: 2em;
+    color: #333;
+}
+
+#services ul {
+    list-style: disc; /* Add bullet points */
+    padding-left: 0;
+    margin: 0 auto; /* Center the list */
+    display: inline-block;
+    text-align: left; /* Align text to the left within the bullet points */
+}
+
+#services li {
+    margin-bottom: 1em;
+    font-size: 1.1em;
+    color: #555;
+}
+
+/* Contact Styles */
+#contact {
+    background-color: #f9f9f9;
+    padding: 2em 0;
+}
+
+#contact h2 {
+    margin-bottom: 1em;
+    font-size: 2em;
+    color: #333;
+}
+
+#contact p {
+    max-width: 800px; /* Set a max-width for better readability */
+    margin: 0 auto 1.5em auto; /* Center the text block */
+    color: #555;
+}
+
+.contact-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.contact-links li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.contact-links a {
+    color: #666;
+    text-decoration: none;
+}
+
+.contact-links a:hover {
+    color: #03A678;
+}
+
+/* Footer Styles */
+footer {
     background-color: #4CAF50;
     color: white;
     text-align: center;
     padding: 1em 0;
-    position: fixed;
+    position: relative;
     bottom: 0;
     width: 100%;
-  }
-  
+}
