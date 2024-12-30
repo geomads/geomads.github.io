@@ -1,353 +1,352 @@
 /* ==========================================================================
    Normalize.css - Reset Styles (Option 1)
    ========================================================================== */
-@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
+   @import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
 
-/* ==========================================================================
-   Basic Reset (Option 2 - If you don't want to use Normalize.css)
-   ========================================================================== */
-/*
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-*/
-
-/* ==========================================================================
-   General Styles
-   ========================================================================== */
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 16px;
-    line-height: 1.6;
-    color: #333;
-    background-color: #fff;
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-    text-align: left;
-}
-
-main {
-    flex: 1; /* Allow main content to take up available space */
-}
-
-.container {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 0 1rem;
-}
-
-a {
-    color: #03A678; /* Default link color */
-    text-decoration: none;
-}
-
-a:hover {
-    color: #026e53;
-}
-
-/* ==========================================================================
-   Header Styles
-   ========================================================================== */
-.header-container {
-    background-color: #368039; /* Darker green */
-    color: #fff;
-    padding: 1rem 0;
-    text-align: center;
-}
-
-.logo-big {
-    max-width: 90%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-}
-
-@media (min-width: 768px) {
-    .logo-big {
-        max-width: 400px;
-    }
-}
-
-/* ==========================================================================
-   Navigation Styles
-   ========================================================================== */
-nav ul {
-    padding: 0;
-    margin: 20px 0;
-    list-style: none;
-    text-align: center;
-}
-
-nav li {
-    display: inline-block;
-    margin: 0;
-}
-
-nav a {
-    display: block;
-    padding: 10px 15px;
-    color: #333;
-    font-weight: 600;
-    text-decoration: none;
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-nav a:hover {
-    background-color: #f5f5f5;
-    color: #03A678;
-}
-
-/* ==========================================================================
-    Blog Navigation Styles (for blog pages)
-   ========================================================================== */
-   .blog-nav ul {
-    padding: 0;
-    margin: 20px 0;
-    list-style: none;
-    text-align: center; /* Center the navigation items */
-  }
-  
-  .blog-nav li {
-    display: inline-block;
-    margin: 0;
-  }
-  
-  .blog-nav a {
-    display: block;
-    padding: 10px 15px;
-    color: #333;
-    font-weight: 600;
-    text-decoration: none;
-    transition: background-color 0.3s ease, color 0.3s ease;
-  }
-  
-  .blog-nav a:hover {
-    background-color: #f5f5f5;
-    color: #03A678;
-  }
-
-/* ==========================================================================
-   Section Styles
-   ========================================================================== */
-.content-section {
-    padding: 3rem 1rem;
-}
-
-h1, h2, h3 {
-    font-weight: 600;
-    line-height: 1.2;
-    margin-bottom: 1rem;
-}
-
-h1 {
-    font-size: 2.5rem;
-}
-
-h2 {
-    font-size: 2rem;
-}
-
-h3 {
-    font-size: 1.5rem;
-}
-
-/* ==========================================================================
-   About Us Styles
-   ========================================================================== */
-#about {
-    background-color: #f0f0f0;
-}
-
-/* ==========================================================================
-   Services Styles
-   ========================================================================== */
-.services-list {
-    list-style: none; /* Remove default bullet points */
-    padding: 0;
-}
-
-.services-list > li {
-    margin-bottom: 2rem; /* Add spacing between service items */
-}
-
-.services-list h3 {
-    margin-top: 0; /* Remove top margin for a cleaner look */
-}
-
-.services-list ul {
-    list-style-type: disc; /* Add back the disc style for nested lists */
-    margin-left: 2rem; /* Indent nested lists */
-    margin-top: 0.5rem; /* Reduce spacing between the service description and the nested list */
-    margin-bottom: 0; /* Remove bottom margin */
-}
-
-.services-image {
-    max-width: 450px;
-    width: 100%;
-    height: auto;
-    margin: 1.5em auto;
-    display: block;
-}
-
-/* Increase image size by 1.5x */
-.services-image {
-    transform: scale(1.5);
-    transition: transform 0.3s ease; /* Add a transition for a smooth effect */
-}
-
-/* Optional: Add a hover effect to scale the image back to normal size */
-.services-image:hover {
-    transform: scale(1);
-}
-
-/* ==========================================================================
-    Blog Styles
-   ========================================================================== */
-   .article-image-main{
-    max-width: 800px;
-    width: 100%;
-    height: auto;
-    margin: 1.5em auto;
-    display: block;
+   /* ==========================================================================
+      Basic Reset (Option 2 - If you don't want to use Normalize.css)
+      ========================================================================== */
+   /*
+   * {
+       margin: 0;
+       padding: 0;
+       box-sizing: border-box;
    }
-
-/* ==========================================================================
-   Contact Styles
-   ========================================================================== */
-#contact {
-    background-color: #f9f9f9;
-}
-
-.contact-details {
-    margin-bottom: 2rem;
-}
-.contact-details p{
-    text-align: left;
-}
-.form-group {
-    margin-bottom: 1.5rem;
-    text-align: left;
-}
-
-label {
-    display: block;
-    margin-bottom: 0.5rem;
-    font-weight: 600;
-}
-
-input[type="text"],
-input[type="email"],
-input[type="tel"],
-textarea {
-    width: 100%;
-    padding: 0.5rem;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-    font-size: 1rem;
-}
-
-textarea {
-    min-height: 120px;
-}
-
-.button {
-    background-color: #4CAF50;
-    color: white;
-    padding: 0.8rem 1.5rem;
-    border: none;
-    border-radius: 3px;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.button:hover {
-    background-color: #368039;
-}
-
-/* ==========================================================================
-   Footer Styles
-   ========================================================================== */
-footer {
-    background-color: #4CAF50;
-    color: white;
-    text-align: center;
-    padding: 1em 0;
-}
-
-/* ==========================================================================
-   Responsiveness (Media Queries)
-   ========================================================================== */
-@media (max-width: 768px) {
-    nav li {
-        margin-right: 10px;
-    }
-
-    .service-item {
-        text-align: center;
-    }
-    .service-item ul{
-        text-align: left;
-    }
-    .services-list li{
-        text-align: left;
-    }
-    /* Adjustments for smaller blog post boxes */
-    .blog-nav ul {
-        padding: 0;
-        margin: 10px 0; /* Reduced margin */
-        list-style: none;
-        text-align: center;
-    }
-
-    .blog-nav li {
-        display: inline-block;
-        margin: 0 5px; /* Reduced margin */
-    }
-
-    .blog-nav a {
-        display: block;
-        padding: 8px 12px; /* Reduced padding */
-        font-size: 0.9rem; /* Slightly smaller font size */
-    }
-}
-
-@media (max-width: 480px) {
-    .logo-big {
-        max-width: 80%;
-    }
-
-    h1 {
-        font-size: 2rem;
-    }
-
-    h2 {
-        font-size: 1.6rem;
-    }
-
-    h3 {
-        font-size: 1.3rem;
-    }
-
-    .contact-details p{
-        text-align: center;
-    }
-    /* Further adjustments for very small screens */
-    .blog-nav li {
-        margin: 0; /* Remove margin */
-    }
-
-    .blog-nav a {
-        padding: 6px 10px; /* Further reduced padding */
-        font-size: 0.8rem; /* Smaller font size */
-    }
-    .content-section {
-        padding: 2rem 1rem;
-    }
-    .services-list li{
-        text-align: left;
-    }
-}
+   */
+   
+   /* ==========================================================================
+      General Styles
+      ========================================================================== */
+   body {
+       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+       font-size: 16px;
+       line-height: 1.6;
+       color: #333;
+       background-color: #fff;
+       display: flex;
+       min-height: 100vh;
+       flex-direction: column;
+       text-align: left;
+   }
+   
+   main {
+       flex: 1; /* Allow main content to take up available space */
+   }
+   
+   .container {
+       max-width: 1100px;
+       margin: 0 auto;
+       padding: 0 1rem;
+   }
+   
+   a {
+       color: #03A678; /* Default link color */
+       text-decoration: none;
+   }
+   
+   a:hover {
+       color: #026e53;
+   }
+   
+   /* ==========================================================================
+      Header Styles
+      ========================================================================== */
+   .header-container {
+       background-color: #368039; /* Darker green */
+       color: #fff;
+       padding: 1rem 0;
+       text-align: center;
+   }
+   
+   .logo-big {
+       max-width: 90%;
+       height: auto;
+       display: block;
+       margin: 0 auto;
+   }
+   
+   @media (min-width: 768px) {
+       .logo-big {
+           max-width: 400px;
+       }
+   }
+   
+   /* ==========================================================================
+      Navigation Styles
+      ========================================================================== */
+   nav ul {
+       padding: 0;
+       margin: 20px 0;
+       list-style: none;
+       text-align: center;
+   }
+   
+   nav li {
+       display: inline-block;
+       margin: 0;
+   }
+   
+   nav a {
+       display: block;
+       padding: 10px 15px;
+       color: #333;
+       font-weight: 600;
+       text-decoration: none;
+       transition: background-color 0.3s ease, color 0.3s ease;
+   }
+   
+   nav a:hover {
+       background-color: #f5f5f5;
+       color: #03A678;
+   }
+   
+   /* ==========================================================================
+       Blog Navigation Styles (for blog pages)
+      ========================================================================== */
+      .blog-nav ul {
+       padding: 0;
+       margin: 20px 0;
+       list-style: none;
+       text-align: center; /* Center the navigation items */
+     }
+     
+     .blog-nav li {
+       display: inline-block;
+       margin: 0;
+     }
+     
+     .blog-nav a {
+       display: block;
+       padding: 10px 15px;
+       color: #333;
+       font-weight: 600;
+       text-decoration: none;
+       transition: background-color 0.3s ease, color 0.3s ease;
+     }
+     
+     .blog-nav a:hover {
+       background-color: #f5f5f5;
+       color: #03A678;
+     }
+   
+   /* ==========================================================================
+      Section Styles
+      ========================================================================== */
+   .content-section {
+       padding: 3rem 1rem;
+   }
+   
+   h1, h2, h3 {
+       font-weight: 600;
+       line-height: 1.2;
+       margin-bottom: 1rem;
+   }
+   
+   h1 {
+       font-size: 2.5rem;
+   }
+   
+   h2 {
+       font-size: 2rem;
+   }
+   
+   h3 {
+       font-size: 1.5rem;
+   }
+   
+   /* ==========================================================================
+      About Us Styles
+      ========================================================================== */
+   #about {
+       background-color: #f0f0f0;
+   }
+   
+   /* ==========================================================================
+      Services Styles
+      ========================================================================== */
+   .services-list {
+       list-style: none; /* Remove default bullet points */
+       padding: 0;
+   }
+   
+   .services-list > li {
+       margin-bottom: 2rem; /* Add spacing between service items */
+   }
+   
+   .services-list h3 {
+       margin-top: 0; /* Remove top margin for a cleaner look */
+   }
+   
+   .services-list ul {
+       list-style-type: disc; /* Add back the disc style for nested lists */
+       margin-left: 2rem; /* Indent nested lists */
+       margin-top: 0.5rem; /* Reduce spacing between the service description and the nested list */
+       margin-bottom: 0; /* Remove bottom margin */
+   }
+   
+   .services-image {
+       max-width: 675px; /* (1.5 * 450px = 675px) */
+       width: 100%;
+       height: auto;
+       margin: 1.5em auto;
+       display: block;
+   }
+   
+   /* Remove scaling and hover effects */
+   .services-image {
+       transform: none; /* Remove scaling */
+       transition: none; /* Remove transition */
+   }
+   
+   .services-image:hover {
+       transform: none; /* Remove scaling on hover */
+   }
+   
+   /* ==========================================================================
+       Blog Styles
+      ========================================================================== */
+      .article-image-main{
+       max-width: 800px;
+       width: 100%;
+       height: auto;
+       margin: 1.5em auto;
+       display: block;
+      }
+   
+   /* ==========================================================================
+      Contact Styles
+      ========================================================================== */
+   #contact {
+       background-color: #f9f9f9;
+   }
+   
+   .contact-details {
+       margin-bottom: 2rem;
+   }
+   .contact-details p{
+       text-align: left;
+   }
+   .form-group {
+       margin-bottom: 1.5rem;
+       text-align: left;
+   }
+   
+   label {
+       display: block;
+       margin-bottom: 0.5rem;
+       font-weight: 600;
+   }
+   
+   input[type="text"],
+   input[type="email"],
+   input[type="tel"],
+   textarea {
+       width: 100%;
+       padding: 0.5rem;
+       border: 1px solid #ccc;
+       border-radius: 3px;
+       font-size: 1rem;
+   }
+   
+   textarea {
+       min-height: 120px;
+   }
+   
+   .button {
+       background-color: #4CAF50;
+       color: white;
+       padding: 0.8rem 1.5rem;
+       border: none;
+       border-radius: 3px;
+       font-size: 1rem;
+       cursor: pointer;
+       transition: background-color 0.3s ease;
+   }
+   
+   .button:hover {
+       background-color: #368039;
+   }
+   
+   /* ==========================================================================
+      Footer Styles
+      ========================================================================== */
+   footer {
+       background-color: #4CAF50;
+       color: white;
+       text-align: center;
+       padding: 1em 0;
+   }
+   
+   /* ==========================================================================
+      Responsiveness (Media Queries)
+      ========================================================================== */
+   @media (max-width: 768px) {
+       nav li {
+           margin-right: 10px;
+       }
+   
+       .service-item {
+           text-align: center;
+       }
+       .service-item ul{
+           text-align: left;
+       }
+       .services-list li{
+           text-align: left;
+       }
+       /* Adjustments for smaller blog post boxes */
+       .blog-nav ul {
+           padding: 0;
+           margin: 10px 0; /* Reduced margin */
+           list-style: none;
+           text-align: center;
+       }
+   
+       .blog-nav li {
+           display: inline-block;
+           margin: 0 5px; /* Reduced margin */
+       }
+   
+       .blog-nav a {
+           display: block;
+           padding: 8px 12px; /* Reduced padding */
+           font-size: 0.9rem; /* Slightly smaller font size */
+       }
+   }
+   
+   @media (max-width: 480px) {
+       .logo-big {
+           max-width: 80%;
+       }
+   
+       h1 {
+           font-size: 2rem;
+       }
+   
+       h2 {
+           font-size: 1.6rem;
+       }
+   
+       h3 {
+           font-size: 1.3rem;
+       }
+   
+       .contact-details p{
+           text-align: center;
+       }
+       /* Further adjustments for very small screens */
+       .blog-nav li {
+           margin: 0; /* Remove margin */
+       }
+   
+       .blog-nav a {
+           padding: 6px 10px; /* Further reduced padding */
+           font-size: 0.8rem; /* Smaller font size */
+       }
+       .content-section {
+           padding: 2rem 1rem;
+       }
+       .services-list li{
+           text-align: left;
+       }
+   }
