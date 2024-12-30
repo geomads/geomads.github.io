@@ -45,7 +45,7 @@ a {
 }
 
 a:hover {
-    text-decoration: underline;
+    color: #026e53;
 }
 
 /* ==========================================================================
@@ -184,7 +184,11 @@ h3 {
     padding: 1.5rem;
     border-radius: 5px;
 }
-
+.service-item ul {
+    text-align: left;
+    list-style-type: disc;
+    margin-left: 20px;
+}
 /* ==========================================================================
     Blog Styles
    ========================================================================== */
@@ -270,6 +274,9 @@ footer {
 
     .service-item {
         text-align: center;
+    }
+    .service-item ul{
+        text-align: left;
     }
 }
 
