@@ -265,8 +265,8 @@ footer {
 }
 
 /* ==========================================================================
-   Responsiveness (Media Queries)
-   ========================================================================== */
+  Responsiveness (Media Queries)
+  ========================================================================== */
 @media (max-width: 768px) {
     nav li {
         margin-right: 10px;
@@ -275,8 +275,28 @@ footer {
     .service-item {
         text-align: center;
     }
-    .service-item ul{
+
+    .service-item ul {
         text-align: left;
+    }
+
+    /* Adjustments for smaller blog post boxes */
+    .blog-nav ul {
+        padding: 0;
+        margin: 10px 0; /* Reduced margin */
+        list-style: none;
+        text-align: center;
+    }
+
+    .blog-nav li {
+        display: inline-block;
+        margin: 0 5px; /* Reduced margin */
+    }
+
+    .blog-nav a {
+        display: block;
+        padding: 8px 12px; /* Reduced padding */
+        font-size: 0.9rem; /* Slightly smaller font size */
     }
 }
 
@@ -296,7 +316,21 @@ footer {
     h3 {
         font-size: 1.3rem;
     }
-    .contact-details p{
+
+    .contact-details p {
         text-align: center;
+    }
+
+    /* Further adjustments for very small screens */
+    .blog-nav li {
+        margin: 0; /* Remove margin */
+    }
+
+    .blog-nav a {
+        padding: 6px 10px; /* Further reduced padding */
+        font-size: 0.8rem; /* Smaller font size */
+    }
+    .content-section {
+        padding: 2rem 1rem;
     }
 }
