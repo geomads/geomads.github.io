@@ -32,13 +32,15 @@ jobs:
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '2.7' # Use a Ruby version compatible with github-pages
+          ruby-version: '3.1' # Updated to Ruby 3.1 (you can use 3.0, 3.2, etc. as well)
+          bundler-cache: true # Add bundler caching for faster builds
 
       - name: Install dependencies
         run: bundle install
 
       - name: Build with Jekyll
-        run: bundle exec jekyll build --destination ./_site
+        # Specify the Github Pages environment and use JEKYLL_ENV variable
+        run: JEKYLL_ENV=production bundle exec jekyll build --destination ./_site
       
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
