@@ -8,3 +8,4 @@ theme: minima # or any theme you prefer
 # Build settings
 plugins:
   - jekyll-feed
+  - jekyll-redirect-from
