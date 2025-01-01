@@ -1,3 +1,4 @@
 User-agent: *
-Disallow: 
-Sitemap: https://geomad.tech/sitemap.xml
+Allow: /
+
+Sitemap: https://geoamd.tech/sitemap.xml
