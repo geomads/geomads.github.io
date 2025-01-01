@@ -43,39 +43,7 @@ We utilize a range of advanced technologies to deliver our services:
 *   **Cloud Computing:** Scalable infrastructure for data processing and storage.
 *   **GIS (Geographic Information Systems):** Spatial data analysis and visualization.
 
-## Getting Started (for Developers)
 
-If you want to contribute to the development of this website, follow these steps:
-
-1. **Clone the repository:**
-
-    ```bash
-    git clone https://github.com/your-username/your-repo-name.git 
-    ```
-    (Replace `your-username` and `your-repo-name` with your GitHub username and repository name.)
-
-2. **Navigate to the project directory:**
-
-    ```bash
-    cd your-repo-name
-    ```
-
-3. **Open `index.html`** in your browser to view the website locally.
-
-4. **Make changes** to the HTML, CSS, or JavaScript files.
-
-5. **Commit your changes:**
-
-    ```bash
-    git add .
-    git commit -m "Your descriptive commit message"
-    ```
-
-6. **Push your changes to GitHub:**
-
-    ```bash
-    git push origin gh-pages
-    ```
 
 ## Contact
 
