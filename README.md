@@ -1,6 +1,6 @@
 # Geomad - Precision Agriculture with Remote Sensing Technology
 
-[![Website Status](https://img.shields.io/website?up_message=up&down_message=down&url=https%3A%2F%2Fgeomad.tech)](https://geomad.tech)
+[![Website Status](https://img.shields.io/website?up_message=up&down_message=down&url=https%3A%2F%2Fgeomads.github.io)](https://geomads.github.io)
 
 **Welcome to the Geomad website repository!**
 
@@ -22,17 +22,17 @@ Geomad offers a comprehensive suite of remote sensing services, including:
 
 ## Website
 
-This repository contains the source code for the Geomad website, hosted at [https://geomad.tech](https://geomad.tech). The website is built using static HTML, CSS, and JavaScript, and is deployed using GitHub Pages.
+This repository contains the source code for the Geomad website, hosted at [https://geomads.github.io](https://geomads.github.io). The website is built using static HTML, CSS, and JavaScript, and is deployed using GitHub Pages.
 
 ### Blog
 
 We maintain a blog where we share insights into the latest advancements in precision agriculture and remote sensing:
 
-*   [Crop Health Monitoring Blog](https://geomad.tech/crop-health-monitoring-blog.html)
-*   [Soil Moisture Analysis Blog](https://geomad.tech/soil-moisture-analysis-blog.html)
-*   [Hyperlocal Weather Forecasting Blog](https://geomad.tech/hyperlocal-weather-forecasting-blog.html)
-*   [Yield Prediction Blog](https://geomad.tech/yield-prediction-blog.html)
-*   [Customized Agricultural Solutions Blog](https://geomad.tech/customized-agricultural-solutions-blog.html)
+*   [Crop Health Monitoring Blog](https://geomads.github.io/crop-health-monitoring-blog.html)
+*   [Soil Moisture Analysis Blog](https://geomads.github.io/soil-moisture-analysis-blog.html)
+*   [Hyperlocal Weather Forecasting Blog](https://geomads.github.io/hyperlocal-weather-forecasting-blog.html)
+*   [Yield Prediction Blog](https://geomads.github.io/yield-prediction-blog.html)
+*   [Customized Agricultural Solutions Blog](https://geomads.github.io/customized-agricultural-solutions-blog.html)
 
 ## Technology
 
